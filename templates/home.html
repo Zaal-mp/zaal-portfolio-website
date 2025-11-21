@@ -4,26 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <!-- font design -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?        family=Orbitron:wght@400..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!--font deesign end -->
+    
+    <!--icon design -->
+    <script src="https://kit.fontawesome.com/4247616d8c.js" crossorigin="anonymous"></script>
+    <!--icon design end-->
+    
     <title>Tech_Entreprenaur.com</title>
 </head>
 <body>
     <header>
         <div class="head">
         <img src="{{ url_for('static', filename='logo 1.svg') }}">
-        <nav>
-            <a class="" href="">About me</a>
-            <a class="" href="">Skills</a>
-            <a class="" href="">Projects</a>
-            <button href="">Contact me</button>
-        </nav>
+            <nav>
+                <a class="" href="#aboutme">About me</a>
+                <a class="" href="#skills">Skills</a>
+                <a class="" href="#projects">Projects</a>
+                <button onclick="location.href='#contactme'" >Contact me</button>
+           </nav>
         </div>
     </header>
     <main>
+        <section>
         <div class="container">
             <h3>Hi , I am</h3>
             <h1>ZAAL</h1>
             <h4>Tech_Entreprenaur/Cloud_Architect</h4>
         </div>
+        </section>
+        <section>
+            <div class="aboutme">
+                <h1 id="aboutme">| About me |</h1>
+                <p>I’m Mohd Zaal, a student and aspiring Cloud Architect with a strong interest in business, technology, and modern IT systems. I enjoy working on web development, backend logic, Python programming, databases, and cloud platforms like Azure. I also have a growing interest in cybersecurity and DevOps. My long-term goal is to combine tech with entrepreneurship and build innovative solutions that create real impact.</p>
+            </div>
+        </section>
+        <section>
+            <div class="skills">
+                <h1 id="skills">| Skills |</h1>
+                <div class="skillscontainer">
+                <div class="devcontainer">
+                    <h3>Web Development</h3>
+                    <p>
+                        <h4>Skills:</h4>
+
+                        HTML / CSS<br>
+
+                        JavaScript<br>
+
+                        Responsive Design<br>
+
+                        <h4>Description:</h4>
+                        I build clean, responsive, and user-friendly web pages using modern frontend technologies. I focus on good UI/UX and smooth interactions.
+                    </p>
+                    </div>
+                <div class="cloudcontainer">
+                    <h3>Backend & Database</h3>
+                    <p>
+                        <h4>Skills:</h4>
+
+                        Python (Flask)<br>
+
+                        SQLite / MySQL<br>
+
+                        API Development<br>
+
+                        <h4>Description:</h4>
+                        I create backend logic, connect databases, and build simple full-stack applications. I enjoy working with Python and learning how real systems work.
+                    </p>
+                    </div>
+                <div class="businesscontainer">
+                    <h3>Cloud & Tech Skills</h3>
+                        <p>
+                            <h4>Skills:</h4>
+
+                            Azure (AZ-900)<br>
+
+                            Git & GitHub<br.
+
+                            Linux Basics<br>
+
+                            Cybersecurity Enthusiast<br>
+
+                            <h4>Description:</h4>
+                            I’m learning cloud fundamentals, DevOps basics, and cybersecurity concepts to build a solid foundation for becoming a Cloud Architect.
+                        </p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="projects">
+                <h1 id="projects">| Projects |</h1>
+                <p>Im currently working on the projects stay tuned</p>
+            </div>
+        </section>
+        <section>
+            <div class="contactme">
+                <h1 id="contactme">| Contact me |</h1>
+                <div class="contactmecontainer">
+                    <h4>Stay in Touch</h4>
+                    <p>I'm always open to new opportunities and collaborations. Feel free to reach out to me via email or connect with me on Instagram</p>
+                <div class="contactlink">
+                <a class="" href="https://instagram.com/mohd_zaal_"><i class="fa-brands fa-square-instagram fa-lg"></i></a>
+                <a class="" href="mailto:mohdzaal@gmail.com"><i class="fa-solid fa-square-envelope fa-lg"></i></a>
+                <a class="" href="https://github.com/Zaal-mp"><i class="fa-brands fa-github fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <p>© 2025 Zaal-mp. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
+
