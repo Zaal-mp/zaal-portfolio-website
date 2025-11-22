@@ -1,243 +1,216 @@
-body{
-   background: #000000;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   margin: 0;
-   padding: 0;
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body{
+    background: linear-gradient(to right, #434343, #000000);
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    color: white;
+}
+
+/* HEADER */
 .head{
-    border: none;
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     align-items: center;
-    margin-top: 10px;
+    padding: 10px 20px;
 }
+
 .head img{
-    padding: 2px;
-    margin-left: 10px;
+    width: 80px;
 }
+
 .head nav{
-   margin-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
+
 .head nav a{
     text-decoration: none;
     color: white;
-    margin-right: 60px;
-    font-size: 20px;
-    transition: color 0.3s;
+    font-size: 18px;
+    transition: 0.3s;
 }
+
 .head nav a:hover{
     color: #00eaff;
-    transition: 0.3s ease;
-    Corsor: pointer;
+    cursor: pointer;
 }
+
 .head nav button{
     border-radius: 15px;
     font-weight: bold;
-    border: 0px;
-    height: 28px;
-    font-size: 13px;
-    background: #
+    border: none;
+    padding: 6px 15px;
+    background: white;
+    color: black;
+    transition: 0.3s ease;
 }
+
 .head nav button:hover{
     background: black;
     color: #00eaff;
-    transition: 0.3s ease;
-    Corsor: pointer;
+    cursor: pointer;
 }
+
+/* HERO */
 .container{
-    width: 400px;
-    height: auto;
-    border: none;
-    text-align: left;
-    margin-top: 100px;
-    margin-left: 150px;
-    display: flex;
-    flex-direction: column;
+    max-width: 500px;
+    margin: 120px auto;
+    padding: 0 25px;
 }
+
 .container h3{
-    color: white;
-    font-size: 40px;
+    font-size: 32px;
 }
+
 .container h1{
-    color: white;
-    font-size: 60px;
-    font-weight: bold;
-    margin-left: 40px;
+    font-size: 55px;
+    font-weight: 800;
 }
+
 .container h4{
-    margin-top: 0px;
     color: darkgray;
     font-size: 20px;
-    margin-left: 40px;
-    /*font design*/
     font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    /*font design end*/
 }
+
+/* ABOUT */
 .aboutme{
-    color: white;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
-    border: none;
-    margin-top: 300px;
-    /*font design*/
-    font-family: "Zalando Sans SemiExpanded", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    /*font design end*/
+    margin-top: 200px;
+    padding: 0 20px;
 }
-.skills{
-    color: white;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: none;
-    text-align: center;
-    margin-top: 300px;
-    /*font design*/
+.aboutme h1{
     font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    /*font design end*/
 }
+
+/* SKILLS */
+.skills{
+    text-align: center;
+    margin-top: 200px;
+    padding: 0 20px;
+}
+
 .skillscontainer{
     width: 100%;
-    height: auto;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    border: none;
-    column-gap: 80px;
-    margin-top: 50px;
-}
-.devcontainer{
-    height: auto;
-    border: none;
-    background-color: #1f1f1f;
-    color: white;
-    border-radius: 15px;
-    width: 300px;
-    text-align: center;
-    /* neon effect */
-    border: 2px solid #00eaff;        /* Neon color */
-    box-shadow: 0 0 10px #00eaff,
-                0 0 20px #00eaff,
-                0 0 40px #00eaff;
-
-        transition: 0.3s ease;
-}
-.cloudcontainer{
-    height: auto;
-    border: none;
-    background-color: #1f1f1f;
-    color: white;
-    border-radius: 15px;
-    width: 300px;
-    text-align: center;
-    /* neon effect */
-    border: 2px solid #00eaff;        /* Neon color */
-    box-shadow: 0 0 10px #00eaff,
-                0 0 20px #00eaff,
-                0 0 40px #00eaff;
-
-        transition: 0.3s ease;
-}
-.businesscontainer{
-    height: auto;
-    border: none;
-    background-color: #1f1f1f;
-    color: white;
-    border-radius: 15px;
-    width: 300px;
-    text-align: center;
-    /* neon effect */
-    border: 2px solid #00eaff;        /* Neon color */
-    box-shadow: 0 0 10px #00eaff,
-                0 0 20px #00eaff,
-                0 0 40px #00eaff;
-
-        transition: 0.3s ease;
-}
-.projects{
-    color: white;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 300px;
-    /*font design*/
+    flex-wrap: wrap;         /* ⭐ RESPONSIVE */
+    gap: 40px;
+    margin-top: 40px;
     font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    /*font design end*/
 }
+
+.devcontainer,
+.cloudcontainer,
+.businesscontainer{
+    background-color: #1f1f1f;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #00eaff;
+    box-shadow: 0 0 10px #00eaff,
+                0 0 20px #00eaff,
+                0 0 40px #00eaff;
+}
+
+/* PROJECTS */
+.projects{
+    text-align: center;
+    margin-top: 200px;
+    padding: 0 20px;
+    font-family: "Orbitron", sans-serif;
+}
+
+/* CONTACT */
 .contactme{
-    color: white;
-    width: 100%;
-    height: auto;
+    text-align: center;
+    margin-top: 200px;
+    padding: 0 20px;
+}
+
+.contactmecontainer{
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.contactlink{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contactlink a{
+    font-size: 30px;
+    color: white;
+    transition: 0.3s;
+}
+
+.contactlink a:hover{
+    color: #00eaff;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 60px;
+    background: #111;
+    color: white;
+    height: 70px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin-top: 300px;
-    /*font design*/
-    font-family: "Zalando Sans SemiExpanded", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    /*font design end*/
 }
-.contactmecontainer{
-    height: auto;
-    border: none;
-    background-color: ;
-    color: white;
-    border-radius: 15px;
-    width: 300px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    column-gap: 30px;
+
+/* RESPONSIVENESS */
+@media (max-width: 768px){
+    .head nav{
+        gap: 15px;
+    }
+
+    .head nav a{
+        font-size: 16px;
+    }
+
+    .container{
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .container h1{
+        font-size: 45px;
+    }
+
+    .container h3{
+        font-size: 28px;
+    }
 }
-.contactlink{
-    color: white;
-   display: flex;
-   justify-content: space-evenly;
-   flex-direction: row;
-   width: auto;
-   height: auto;
-}
-.contactlink a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-footer{
-  margin-top: 30px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  color: white;
-  background: #111;
-  width: 100%;
-  height: 70px;
+
+@media (max-width: 500px){
+    .head{
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+
+    .head nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skillscontainer{
+        gap: 20px;
+    }
+
+    .container h1{
+        font-size: 38px;
+    }
 }
